@@ -1,0 +1,12 @@
+{
+  "name": "teacher-attendance-performance-system",
+  "private": true,
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev": "concurrently \"cd backend && node server.js\" \"cd frontend && npm run dev\"",
+    "seed": "cd backend && node db/seed.js"
+  },
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
